@@ -45,6 +45,10 @@
     <form:input id="textinput2" path="emailAddress" cssErrorClass="error"/>
     <form:errors path="emailAddress" cssClass="error"/>
     <br>
+    <label for="textinput3"><spring:message code="attendee.phone"/>:</label>
+    <form:input id="textinput3" path="phone" cssErrorClass="error"/>
+    <form:errors path="phone" cssClass="error"/>
+    <br>
     <input type="submit" class="btn" value="Enter Attendee"/>
 </form:form>
 <%--<h1>${event.name}</h1>--%>

@@ -1,5 +1,6 @@
 package com.neotechlabs.model;
 
+import com.neotechlabs.view.Phone;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
@@ -12,6 +13,9 @@ public class Attendee {
 
     @NotEmpty @Email
     private String emailAddress;
+
+    @NotEmpty @Phone
+    private String phone;
 
     public String getName() {
         return name;
@@ -29,4 +33,11 @@ public class Attendee {
         this.emailAddress = emailAddress;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 }
